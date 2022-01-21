@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class MonteCarlo {
 
-    public void calculateForN(int n) {
+    public BigDecimal calculateForN(int n) {
         int inner = 0;
         int outer = 0;
         final Random rand = new Random(123456);
@@ -22,5 +22,6 @@ public class MonteCarlo {
         // lend
 
         BigDecimal piApprox = BigDecimal.valueOf(4.0 * ((double) inner / ((double) inner + (double) outer)));
+        return piApprox;
     }
 }

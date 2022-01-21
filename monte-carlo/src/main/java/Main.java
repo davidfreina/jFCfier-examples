@@ -1,7 +1,15 @@
-import java.util.concurrent.TimeUnit;
-
 public class Main {
+    public static void main(String[] args) {
+        SimpleIncrement simpleIncrement = new SimpleIncrement();
+        System.out.printf("Simple increment: a = %s%n", simpleIncrement.simpleIncrement());
 
+        MonteCarlo monteCarlo = new MonteCarlo();
+        System.out.printf("Monte Carlo Integration: pi = %s%n", monteCarlo.calculateForN(100000000));
+    }
+}
+
+/*
+public class Main {
     private static final int ITERATIONS = 5;
 
     public static void main(String[] args) {
@@ -18,3 +26,4 @@ public class Main {
         }
     }
 }
+ */
